@@ -376,7 +376,7 @@ FORM
   }
 }
 
-@media (max-width: 540px) {
+@media (max-width: 625px) {
   nav {
     display: none;
   }
@@ -410,6 +410,10 @@ FORM
     background-color: #7159c1;
 
     z-index: 10;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .menu-section.on nav {
@@ -418,7 +422,7 @@ FORM
 
   .menu-section.on .menu-toggle {
     position: absolute;
-    right: 0;
+    right: 30px;
     top: 15px;
   }
 
@@ -432,5 +436,23 @@ FORM
 
   .menu-section.on .menu-toggle .three {
     transform: rotate(-45deg) translate(8.5px, -9px);
+  }
+
+  .menu-section.on nav ul {
+    text-align: center;
+    display: block;
+  }
+
+  .menu-section.on nav ul a {
+    transition-duration: 0.5s;
+    font-size: 3rem;
+    line-height: 4rem;
+    display: block;
+  }
+}
+
+@media (max-width: 320px) {
+  #form h3 {
+    font-size: 2rem;
   }
 }
